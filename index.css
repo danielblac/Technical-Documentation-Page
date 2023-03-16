@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: white;
+  color: rgb(82, 82, 87);
+  line-height: 1.5;
+}
+
+main {
+  width: 77%;
+  position: absolute;
+  top: 0;
+  left: 23%;
+  padding: 0 20px 10px;
+  margin: 0 20px;
+}
+
+p {
+  margin-left: 30px;
+  padding: 0 5px 20px;
+}
+
+main li {
+  margin-left: 80px;
+  padding: 0 5px 20px;
+}
+
+main header {
+  color: black;
+  font-size: 28px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+main a,
+main a:visited {
+  text-decoration: none;
+  color: rgba(82, 82, 87, 0.75);
+}
+
+main a:hover,
+main a:focus {
+  color: rgba(82, 82, 87);
+}
+
+nav {
+  width: 23%;
+  height: 100%;
+  margin: 0 auto 1rem;
+  line-height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: solid gray;
+}
+
+nav header {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+nav ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  list-style-type: none;
+}
+
+nav li {
+  border-top: 1px solid #333;
+  padding: 0 10px;
+  position: relative;
+}
+
+nav a,
+nav a:visited {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(82, 82, 87);
+}
+
+nav a:hover,
+nav a:focus {
+  color: rgba(82, 82, 87, 0.75);
+}
+
+code {
+  float: right;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+
+
+
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: 0;
+  }
+
+  nav {
+    width: 100%;
+    max-height: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border: none;
+  }
+
+  nav ul {
+    border: 1px solid gray;
+    border-bottom: solid gray;
+  }
+
+}
